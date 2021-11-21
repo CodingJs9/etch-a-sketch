@@ -11,11 +11,8 @@ createGridBtn.addEventListener('click', createGrid)
 clearGridBtn.addEventListener('click', clearGrid)
 
 // Functions
-function createGrid(size) {
-	if (gridSize.value > 64)
-		return alert(
-			'Grid size cannot be higher than 64. Please choose a smaller size.'
-		)
+function createGrid() {
+	if (gridSize.value > 64) return alert('Grid size cannot be higher than 64')
 	clearGrid()
 	let numberOfCells = gridSize.value * gridSize.value
 	gridContainer.style.setProperty('--grid-size', gridSize.value)
