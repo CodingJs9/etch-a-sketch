@@ -11,7 +11,7 @@ createGridBtn.addEventListener('click', createGrid)
 clearGridBtn.addEventListener('click', clearGrid)
 
 // Functions
-function createGrid() {
+function createGrid(size) {
 	if (gridSize.value > 64)
 		return alert(
 			'Grid size cannot be higher than 64. Please choose a smaller size.'
